@@ -1,0 +1,49 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fablix</title>
+</head>
+<body>
+Welcome to Fablix!
+<p id="sessionID"></p>
+<p id="lastAccessTime"></p>
+
+<form ACTION="#" id="search_form" METHOD="get">
+    <label>title:</label>
+    <label>
+        <input name="title" id="title" type="text">
+    </label>
+    <br>
+    <label>year:</label>
+    <label>
+        <input name="year" id="year" type="text">
+    </label>
+    <br>
+    <label>director:</label>
+    <label>
+        <input name="director" id="director" type="text">
+    </label>
+    <br>
+    <label>star name:</label>
+    <label>
+        <input name="starname" id="star_name" type="text">
+    </label>
+    <br>
+    <input type="submit" VALUE="search">
+</form>
+<div style ="font-size: 20px"   id="browse_genre"></div>
+
+<div style ="font-size: 20px"   id="browse_title"></div>
+
+<div id="item_list"></div> <br>
+
+<button type = "button" onclick="Checkout()">Checkout</button>
+
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='index.js'></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+</head>
+<body>
+<h2 align="center">Payment</h2>
+
+<div align="center" id="payment_total"></div >
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<form id="payment_form" method="post" action="#" align="center">
+    <label><b>First name</b></label>
+    <label>
+        <input name="firstname"  placeholder="Enter First Name" type="text">
+    </label>
+    <br>
+    <label><b>Last name</b></label>
+    <label>
+        <input name="lastname"  placeholder="Enter Last Name" type="text">
+    </label>
+    <br>
+    <label><b>Credit card number</b></label>
+    <label>
+        <input name="creditcard"  placeholder="Enter Credit Card Number" type="text">
+    </label>
+    <br>
+    <label><b>Expiration date</b></label>
+    <label>
+        <input name="expdate"  type="date">
+    </label>
+    <br>
+    <input type="submit" value="Place order">
+</form>
+
+<!-- div id="payment_error_message"></div -->
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./payment.js"></script>
+
+</body>
+</html>
